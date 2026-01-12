@@ -1,0 +1,68 @@
+:root {
+    --uom-blue: #003366;
+    --danger-red: #d32f2f;
+    --warning-orange: #ff9800;
+    --success-green: #2e7d32;
+    --light-bg: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--light-bg);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app-container {
+    background: white;
+    width: 90%;
+    max-width: 450px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.main-logo { height: 70px; margin-bottom: 10px; }
+h2 { font-size: 1rem; color: var(--uom-blue); margin: 0; text-transform: uppercase; }
+.sub-head { font-size: 0.85rem; color: #666; margin: 2px 0 15px 0; }
+.title { font-size: 1.4rem; margin-bottom: 20px; color: #333; }
+
+#status-bar {
+    padding: 8px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+}
+
+.status-online { background: #e8f5e9; color: var(--success-green); }
+.status-offline { background: #ffebee; color: var(--danger-red); }
+
+.control-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 20px 10px;
+}
+
+.alarm-btn { background: var(--uom-blue); }
+.siren-btn { background: var(--warning-orange); width: 100%; margin-bottom: 12px; font-size: 1rem; }
+.master-btn { background: var(--danger-red); width: 100%; font-size: 1.1rem; border: 2px solid #a00000; }
+
+.btn:active { transform: scale(0.95); opacity: 0.8; }
+
+footer { margin-top: 25px; font-size: 0.75rem; color: #888; border-top: 1px solid #eee; padding-top: 15px; }
