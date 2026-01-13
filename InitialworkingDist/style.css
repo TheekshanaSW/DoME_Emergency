@@ -8,20 +8,18 @@
 body { font-family: 'Segoe UI', sans-serif; background: var(--light-bg); display: flex; justify-content: center; padding: 20px; }
 .app-container { background: white; width: 100%; max-width: 450px; padding: 25px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; }
 .main-logo { height: 70px; margin-bottom: 10px; }
-h2 { font-size: 1rem; color: var(--uom-blue); margin: 0; text-transform: uppercase; }
-.sub-head { font-size: 0.85rem; color: #666; margin: 2px 0 15px 0; }
-.title { font-size: 1.4rem; margin-bottom: 20px; color: #333; }
-
-#status-bar { padding: 10px; border-radius: 50px; font-weight: bold; font-size: 0.8rem; margin-bottom: 20px; border: 1px solid #ccc; }
-.status-online { background: #e8f5e9; color: #2e7d32; border-color: #2e7d32 !important; }
-.status-offline { background: #ffebee; color: #c62828; border-color: #c62828 !important; }
+#status-bar { padding: 8px; border-radius: 50px; font-weight: bold; font-size: 0.8rem; margin-bottom: 20px; }
+.status-online { background: #e8f5e9; color: #2e7d32; }
+.status-offline { background: #ffebee; color: #c62828; }
 
 .control-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px; }
 .btn { border: none; border-radius: 12px; color: white; font-weight: bold; cursor: pointer; padding: 20px 10px; transition: 0.3s; }
+
 .alarm-btn { background: var(--uom-blue); }
 .siren-btn { background: var(--warning-orange); width: 100%; margin-bottom: 15px; }
 .master-btn { background: #333; width: 100%; }
 
+/* ACTIVE STATE STYLE */
 .active-alarm {
     background-color: var(--danger-red) !important;
     animation: pulse-red 1.5s infinite;
@@ -35,6 +33,4 @@ h2 { font-size: 1rem; color: var(--uom-blue); margin: 0; text-transform: upperca
 }
 
 .state-label { font-size: 0.7rem; display: block; margin-top: 5px; opacity: 0.8; }
-.sync-status { font-size: 0.75rem; color: #666; margin-bottom: 10px; font-family: monospace; background: #f0f0f0; padding: 4px; border-radius: 4px; display: inline-block; }
-hr { border: 0; border-top: 1px solid #eee; margin: 15px 0; }
-footer { margin-top: 10px; font-size: 0.75rem; color: #888; }
+footer { margin-top: 25px; font-size: 0.75rem; color: #888; border-top: 1px solid #eee; padding-top: 15px; }
