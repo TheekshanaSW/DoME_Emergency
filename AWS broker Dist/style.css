@@ -1,0 +1,21 @@
+:root { --uom: #003366; --red: #d32f2f; --orange: #ff9800; --bg: #f4f7f6; }
+body { font-family: 'Segoe UI', sans-serif; background: var(--bg); display: flex; justify-content: center; padding: 20px; }
+.app-container { background: white; width: 100%; max-width: 450px; padding: 25px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; }
+.main-logo { height: 70px; margin-bottom: 10px; }
+h2 { font-size: 0.9rem; color: var(--uom); margin: 0; }
+.sub-head { font-size: 0.8rem; color: #666; margin: 2px 0 15px 0; }
+.title { font-size: 1.2rem; margin-bottom: 20px; color: #333; }
+#status-bar { padding: 10px; border-radius: 50px; font-weight: bold; font-size: 0.75rem; margin-bottom: 20px; border: 1px solid #ccc; cursor: pointer; }
+.status-online { background: #e8f5e9; color: #2e7d32; border-color: #2e7d32 !important; }
+.status-offline { background: #ffebee; color: #c62828; border-color: #c62828 !important; }
+.control-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
+.btn { border: none; border-radius: 10px; color: white; font-weight: bold; cursor: pointer; padding: 18px 5px; transition: 0.3s; }
+.alarm-btn { background: var(--uom); }
+.siren-btn { background: var(--orange); width: 100%; margin-bottom: 12px; }
+.master-btn { background: #333; width: 100%; }
+.active-alarm { background-color: var(--red) !important; animation: pulse 1.5s infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+.state-label { font-size: 0.65rem; display: block; margin-top: 4px; opacity: 0.9; }
+.sync-status { font-size: 0.7rem; color: #666; margin-bottom: 5px; font-family: monospace; }
+hr { border: 0; border-top: 1px solid #eee; margin: 10px 0; }
+footer { font-size: 0.7rem; color: #888; }
